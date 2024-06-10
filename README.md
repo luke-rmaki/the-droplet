@@ -11,18 +11,17 @@ terraform apply -var-file="env.tfvars"
 
 ### 02. Set up
 ```bash
-scp start-up.sh root@public-ip:~/
+scp start-up.sh root@rmaki.tech:~/
+ssh root@rmaki.tech
 ```
-SSH into droplet
 
 ```bash
 bash start-up.sh
-scp auto-upgrade.sh luke@public-ip:~/
+scp auto-upgrade.sh luke@rmaki.tech:~/
 ```
 
-SSH in as new user
-
 ```bash
+ssh luke@rmaki.tech
 bash auto-upgrade.sh
 
 sudo nano /etc/ssh/sshd_config

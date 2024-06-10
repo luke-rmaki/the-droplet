@@ -17,7 +17,7 @@ sleep 1
 
 sudo systemctl status docker
 
-sudo systemctl status unattended-upgrade
+sudo systemctl unattended-upgrades
 
 
 

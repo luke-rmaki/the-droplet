@@ -33,25 +33,6 @@ resource "digitalocean_droplet" "luke_droplet" {
   ]
 }
 
-resource "cloudflare_record" "droplet" {
-  zone_id = var.cloudflare_zone_id
-  name    = "rmaki.tech"
-  value   = digitalocean_droplet.luke_droplet.ipv4_address
-  type    = "A"
-  proxied = false
-  ttl = 60
-}
-
-resource "cloudflare_record" "droplet-www" {
-  zone_id = var.cloudflare_zone_id
-  name    = "www.rmaki.tech"
-  value   = digitalocean_droplet.luke_droplet.ipv4_address
-  type    = "A"
-  proxied = false
-  ttl = 60
-}
-
-
 
 # Output the public IP address of the new droplet
  output "public_ip_server" {
