@@ -89,4 +89,22 @@ resource "cloudflare_record" "torr-www" {
   ttl = 60
 }
 
+resource "cloudflare_record" "budget" {
+  zone_id = var.cloudflare_zone_id
+  name    = "budget.rmaki.tech"
+  content   = digitalocean_droplet.luke_droplet.ipv4_address
+  type    = "A"
+  proxied = false
+  ttl = 60
+}
+
+resource "cloudflare_record" "budget-www" {
+  zone_id = var.cloudflare_zone_id
+  name    = "www.budget.rmaki.tech"
+  content   = digitalocean_droplet.luke_droplet.ipv4_address
+  type    = "A"
+  proxied = false
+  ttl = 60
+}
+
 

@@ -14,5 +14,7 @@ chown -R luke:luke /home/luke/.ssh
 chmod 700 /home/luke/.ssh
 chmod 600 /home/luke/.ssh/authorized_keys
 
+mkdir /home/luke/apps/
+
 echo "Rebooting"
 reboot 

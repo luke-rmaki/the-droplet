@@ -18,6 +18,8 @@ ssh root@rmaki.tech
 ```bash
 bash start-up.sh
 scp auto-upgrade.sh luke@rmaki.tech:~/
+scp Caddyfile luke@rmaki.tech:~/apps/
+
 ```
 
 ```bash
