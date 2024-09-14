@@ -17,3 +17,7 @@ files.rmaki.tech {
 torr.rmaki.tech {
   reverse_proxy localhost:6467
 }
+
+budget.rmaki.tech {
+  reverse_proxy localhost:5006
+}
