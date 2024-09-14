@@ -24,7 +24,7 @@ sudo apt install caddy
 
 sleep 1
 
-sudo systemctl status docker
+# sudo systemctl status docker
 
 sudo systemctl start unattended-upgrades
 
